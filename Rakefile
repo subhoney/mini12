@@ -9,3 +9,8 @@ desc 'run the rails server'
 task :run do 
    sh 'rails server -b $IP -p $PORT'
 end
+
+desc 'run test suite'
+task :tall do 
+    sh 'bundle exec rake test'
+end
