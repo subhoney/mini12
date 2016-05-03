@@ -4,3 +4,8 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+desc 'run the rails server'
+task :run do 
+   sh 'rails server -b $IP -p $PORT'
+end
